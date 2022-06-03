@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: #e3e2de;
+    font-size: 18px;
+    font-family: 'Yusei Magic', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.header{
+    grid-area: "header";
+}
+
+main{
+    grid-area: "main";
+    margin-top: 2rem;
+}
+
+form{
+    line-height: 2rem;
+}
+
+.footer{
+    grid-area: "footer";
+    display: block;
+    background-color: #777;
+    padding: 1em;
+}
+
+.header__nav{
+    background-color: #777;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+    height: 10em;
+}
+
+.header__logo{
+    display: inline;
+    width: 30%;
+}
+
+.header__anchor{
+    color: #777;
+    font-family: Georgia;
+    text-decoration: none;
+}
+
+
+.header__list{
+    display: inline;
+    width: 100%;
+}
+
+
+.header__item{
+    display: inline;
+}
+
+.header__button{
+    width: 20%;
+    height: 5em;
+    background-color: #e3e2de;
+    border: 2px solid black
+}
+
+.main__title{
+    text-align: center;
+    margin: 1em auto;
+    font-family: Georgia;
+    font-size: 3em;
+}
+
+.main__content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.main__video{
+    width: 45%;
+    display: flex;
+}
+
+.main__text{
+    width: 40%;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+    text-align: center;
+}
+
+.main__textCalibracion{
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.main__table{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.main__th{
+    border: 1px solid black;
+    margin: 0 0;
+}
+
+.main__td{
+    border: 1px solid black;
+    margin: 0 0;
+    height: 2rem;
+}
+
+.main__audiometriaPanelControl{
+    display: flex;
+    margin: 2rem;    
+}
+
+.main__audPanel{
+    border: 2px solid black;
+    width: 45%;
+    text-align: center;
+}
+
+.main__audSenal{
+    border: 1px solid black;
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+
+.main__audOido{
+    width: 50%;
+}
+
+.main__audPlay{
+    border: 2px solid black;
+    width: 25%;
+}
+
+.main__audEnmascarar{
+    border: 2px solid black;
+    text-align: center;
+    width: 30%;
+    padding-top: 1%;
+}
+
+.main__logo1{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+}
+
+.main__logoLista1{
+    border: 2px black solid;
+    width: 16%;
+    text-align: center;
+}
+
+.main__logoLista2{
+    border: 2px black solid;
+    width: 16%;
+    text-align: center;
+}
+
+.main__logoLista3{
+    border: 2px black solid;
+    width: 14%;
+    text-align: center;
+}
+
+.main__logoEnmascarar{
+    border: 2px black solid;
+    width: 25%;
+    text-align: center;
+}
+
+.main__logo2{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+}
+
+.main__logoTable{
+    border-collapse: collapse;
+    width: 40%;
+    border: 2px solid black;
+}
+
+.main__logoPanel{
+    border: 2px solid black;
+    width: 25%;
+    text-align: center;
+}
+
+.main__logoPlay{
+    border: 2px solid black;
+    width: 25%;
+    text-align: center;
+}
+
+.main__div--padding{
+    padding: 1rem;
+}
+
+.main__div--border{
+    border: 2px solid black;
+}
+
+.main__div--width20{
+    width: 20rem;
+}
+
+.main__div--width40{
+    width: 40rem;
+}
+
+.main__div--inline{
+    display: inline-block;
+}
+
+.btn__principal{
+    display: block;
+    border: 1px solid black;
+    margin: 2rem auto;
+    width: 10rem;
+    height: 3rem;
+    font-family: Georgia;
+    font-weight: 600;
+}
+
+.btn__play{
+    display: block;
+    border: 1px solid black;
+    margin: 2rem auto;
+    width: 10rem;
+    height: 3rem;
+    font-family: Georgia;
+    font-weight: 600;
+}
+
+.main__contenedorBtn{
+    text-align: right;
+    padding-right: 4rem;
+}
+
+.btn__correcto{
+    width: 2rem;
+    height: 2rem;
+    background-color: green;
+}
+
+.btn__incorrecto{
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+}
+
+.table--width30{
+    width: 30%;
+}
+
+.table--inline{
+    display: inline-table;
+}
+
+.btn--inline{
+    display: inline;
+}
+
+.p--inline{
+    display: inline-block;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .header__link{
+        width: 216px;
+        height: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .header__logo{
+        width: 90%;
+    }
+
+    .header__button{
+        width: 70%;
+        height: 2em;
+    }
+
+    .main__content{
+        flex-direction: column;
+    }
+
+    .main__video{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .main__text{
+        width: 100%;
+        align-items : center;
+        justify-content : center;
+        text-align: center;
+    }
+
+    .main__audiometriaPanelControl{
+        flex-direction: column;
+        align-items: center;   
+    }
+    
+    .main__audPanel{
+        width: 90%;
+    }
+        
+    .main__audPlay{
+        width: 90%;
+    }
+    
+    .main__audEnmascarar{
+        width: 90%;
+    }
+
+    .main__logo1{
+        flex-direction: column;
+        align-items: center;   
+    }
+    
+    .main__logoLista1{
+        width: 90%;
+    }
+        
+    .main__logoLista2{
+        width: 90%;
+    }
+    
+    .main__logoLista3{
+        width: 90%;
+    }
+
+    .main__logoEnmascarar{
+        width: 90%;
+    }
+    
+    .main__logo2{
+        flex-direction: column;
+        align-items: center;   
+    }
+
+    .main__logoPanel{
+        width: 90%;
+    }
+    
+    .main__logoPlay{
+        width: 90%;
+    }
+
+    .main__logoTable{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    
+    .header__link{
+        width: 216px;
+        height: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__logo{
+        width: 90%;
+    }
+
+    .header__button{
+        width: 70%;
+        height: 2em;
+    }
+
+    .main__content{
+        flex-direction: column;
+    }
+
+    .main__video{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .main__text{
+        width: 100%;
+        align-items : center;
+        justify-content : center;
+        text-align: center;
+    }
+
+    .main__logo1{
+        margin-top: 0;
+    }
+
+    main{
+        margin-top: 0;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
