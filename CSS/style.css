@@ -33,7 +33,7 @@ form{
 .footer{
     grid-area: "footer";
     display: block;
-    background-image: linear-gradient(to bottom, #e3e2de, #777);
+    background-image: linear-gradient(to bottom, #d1d0cd, #777);
     padding: 1em;
 }
 
@@ -102,6 +102,7 @@ form{
     align-items : center;
     justify-content : center;
     text-align: center;
+    animation: myAnim 4s ease 0s 1 normal forwards;
 }
 
 .main__textCalibracion{
@@ -289,7 +290,18 @@ form{
 }
 
 
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
 
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
 
 @media screen and (max-width: 768px) {
 
