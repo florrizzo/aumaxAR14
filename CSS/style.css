@@ -33,7 +33,7 @@ form{
 .footer{
     grid-area: "footer";
     display: block;
-    background-color: #777;
+    background-image: linear-gradient(to bottom, #e3e2de, #777);
     padding: 1em;
 }
 
@@ -72,6 +72,10 @@ form{
     height: 5em;
     background-color: #e3e2de;
     border: 2px solid black
+}
+
+.header__button:hover{
+    background-color: #d1d0cd;
 }
 
 .main__title{
