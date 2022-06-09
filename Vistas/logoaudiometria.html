@@ -13,14 +13,21 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <a href="../index.html" class="header__link"><img src="../Assets/alogo.png" alt="" class="header__logo"></a>
-            <ul class="header__list">
-                <li class="header__item"><button class="header__button"><a class="header__anchor" href="calibracion.html">Calibración</a></button></li>
-                <li class="header__item"><button class="header__button"><a class="header__anchor" href="audiometria.html">Audiometría</a></button></li>
-                <li class="header__item"><button class="header__button"><a class="header__anchor" href="logoaudiometria.html">Logoaudiometría</a></button></li>
-                <li class="header__item"><button class="header__button"><a class="header__anchor" href="contacto.html">Contacto</a></button></li>
-            </ul>
+        <nav class="header__nav navbar navbar-expand-lg">
+            <a href="../index.html" class="header__link"><img src="../Assets/alogo.png" alt="" class="header__logo"></a> 
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="calibracion.html">Calibración</a>
+                        <a class="nav-link" href="audiometria.html">Audiometría</a>
+                        <a class="nav-link" href="logoaudiometria.html">Logoaudiometría</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>            
         </nav>
     </header> 
     <main>
@@ -41,7 +48,7 @@
                     <button class="btn__lista1">B4</button>
                     <button class="btn__lista1">C4</button>
                 </div>
-                <div class="main__logoLista1">
+                <div class="main__logoLista1">  
                     <p>Listas adultos 2:</p>
                     <button class="btn__lista1">A1</button>
                     <button class="btn__lista1">B1</button>
@@ -73,7 +80,7 @@
                     <button class="btn__lista3">M3</button>			
                 </div>
         
-                <div class="main__logoEnmascarar">
+                <div class="main__logoEnmascarar">   
                     <input id="enmascarar" type="checkbox">
                     <label for="enmascarar">Enmascarar</label>
                     <p>Tipo de enmascaramiento:</p>
