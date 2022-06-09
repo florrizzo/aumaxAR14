@@ -30,10 +30,14 @@ form{
     line-height: 2rem;
 }
 
+iframe{
+    height: 409px;
+}
+
 .footer{
     grid-area: "footer";
     display: block;
-    background-image: linear-gradient(to bottom, #d1d0cd, #777);
+    background-color: #777;
     padding: 1em;
 }
 
@@ -135,30 +139,30 @@ form{
 
 .main__audPanel{
     border: 2px solid black;
-    width: 45%;
+    /* width: 45%; */
     text-align: center;
 }
 
 .main__audSenal{
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     display: flex;
     height: 50%;
     align-items: center;
 }
 
-.main__audOido{
-    width: 50%;
-}
+/* .main__audOido{
+        width: 50%;
+} */
 
 .main__audPlay{
     border: 2px solid black;
-    width: 25%;
+    /* width: 25%; */
 }
 
 .main__audEnmascarar{
     border: 2px solid black;
     text-align: center;
-    width: 30%;
+    /* width: 30%; */
     padding-top: 1%;
 }
 
@@ -397,7 +401,7 @@ form{
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 992px) {
 
     
     .header__link{

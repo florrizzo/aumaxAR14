@@ -13,21 +13,29 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav">
+        <nav class="header__nav navbar navbar-expand-lg">
             <a href="index.html" class="header__link"><img src="./Assets/alogo.png" alt="" class="header__logo"></a>
-            <ul class="header__list">
-                <li class="header__item"><button class="header__button"><a class="header__anchor" href="./Vistas/calibracion.html">Calibración</a></button></li>
-                <li class="header__item"><button class="header__button"><a class="header__anchor" href="./Vistas/audiometria.html">Audiometría</a></button></li>
-                <li class="header__item"><button class="header__button"><a class="header__anchor" href="./Vistas/logoaudiometria.html">Logoaudiometría</a></button></li>
-                <li class="header__item"><button class="header__button"><a class="header__anchor" href="./Vistas/contacto.html">Contacto</a></button></li>
-            </ul>
+            
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="./Vistas/calibracion.html">Calibración</a>
+                        <a class="nav-link" href="./Vistas/audiometria.html">Audiometría</a>
+                        <a class="nav-link" href="./Vistas/logoaudiometria.html">Logoaudiometría</a>
+                        <a class="nav-link" href="./Vistas/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>            
         </nav>
     </header>
-    <main>
-        <h1 class="main__title">Audmax AR14</h1>
-        <div class="main__content">
-            <iframe class="main__video" width="727" height="409" src="https://www.youtube.com/embed/Fy8ooJfMU_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="main__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum repellat porro, reprehenderit vitae, voluptate quo sequi quod aliquam dignissimos expedita corporis, dolorum quis tenetur recusandae ullam doloribus! Deserunt, nobis neque.</p>
+    <main class="container">
+        <h1 class="text-center">Audmax AR14</h1>
+        <div class="row">
+            <iframe class="col-md-6" src="https://www.youtube.com/embed/Fy8ooJfMU_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="col-md-6 text-center d-flex align-items-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum repellat porro, reprehenderit vitae, voluptate quo sequi quod aliquam dignissimos expedita corporis, dolorum quis tenetur recusandae ullam doloribus! Deserunt, nobis neque.</p>
         </div>
     </main>
     <footer class="footer">
