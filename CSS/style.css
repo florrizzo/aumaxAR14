@@ -36,9 +36,26 @@ iframe{
 
 .footer{
     grid-area: "footer";
-    display: block;
+    display: inline-flex;
     background-color: #777;
     padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__p{
+    display: inline-flex;
+}
+
+.footer__list{
+    list-style: none;
+    display: inline-flex;
+}
+
+.footer__link{
+    color: black;
+    font-size: 1.5rem;
+    margin: 1rem;
 }
 
 .header__nav{
