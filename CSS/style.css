@@ -167,19 +167,13 @@ iframe{
     align-items: center;
 }
 
-/* .main__audOido{
-        width: 50%;
-} */
-
 .main__audPlay{
     border: 2px solid black;
-    /* width: 25%; */
 }
 
 .main__audEnmascarar{
     border: 2px solid black;
     text-align: center;
-    /* width: 30%; */
     padding-top: 1%;
 }
 
@@ -275,6 +269,30 @@ iframe{
     height: 3rem;
     font-family: Georgia;
     font-weight: 600;
+}
+
+.btn__lista1{
+    width:25%;
+}
+
+.btn__lista1:hover{
+    background-color: #d1d0cd;
+}
+
+.btn__lista2{
+    width: 45%;
+}
+
+.btn__lista2:hover{
+    background-color: #d1d0cd;
+}
+
+.btn__lista3{
+    width: 55%;
+}
+
+.btn__lista3:hover{
+    background-color: #d1d0cd;
 }
 
 .main__contenedorBtn{
