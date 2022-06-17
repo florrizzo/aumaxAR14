@@ -1,0 +1,25 @@
+@import "./variables";
+
+.footer{
+    grid-area: "footer";
+    display: inline-flex;
+    background-color: $grisOscuro;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+    &__p{
+        display: inline-flex;
+    }
+    
+    &__list{
+        list-style: none;
+        display: inline-flex;
+    }
+    
+    &__link{
+        color: black;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+}
