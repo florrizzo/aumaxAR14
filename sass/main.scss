@@ -1,6 +1,27 @@
 @import "./parciales/reset";
 @import "./parciales/body";
 @import "./parciales/header";
+@import "./parciales/main";
 @import "./parciales/footer";
+@import "./parciales/btn";
 
 
+form{
+    line-height: 2rem;
+}
+
+.table--width30{
+    width: 30%;
+}
+
+.table--inline{
+    display: inline-table;
+}
+
+.btn--inline{
+    display: inline;
+}
+
+.p--inline{
+    display: inline-block;
+}

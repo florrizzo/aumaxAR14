@@ -40,6 +40,108 @@ body {
   .header__button:hover {
     background-color: #d1d0cd; }
 
+.main {
+  grid-area: "main";
+  margin-top: 2rem; }
+  .main__title {
+    text-align: center;
+    margin: 1em auto;
+    font-family: Georgia;
+    font-size: 3em; }
+  .main__content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em; }
+  .main__text {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: myAnim 4s ease 0s 1 normal forwards; }
+  .main__textCalibracion {
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto; }
+  .main__table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 2rem auto; }
+  .main__th {
+    border: 1px solid black;
+    margin: 0 0; }
+  .main__td {
+    border: 1px solid black;
+    margin: 0 0;
+    height: 2rem; }
+  .main__audiometriaPanelControl {
+    display: flex;
+    margin: 2rem; }
+  .main__audPanel {
+    border: 2px solid black;
+    /* width: 45%; */
+    text-align: center; }
+  .main__audSenal {
+    border-bottom: 1px solid black;
+    display: flex;
+    height: 50%;
+    align-items: center; }
+  .main__audPlay {
+    border: 2px solid black; }
+  .main__audEnmascarar {
+    border: 2px solid black;
+    text-align: center;
+    padding-top: 1%; }
+  .main__logo1 {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around; }
+  .main__logoLista1 {
+    border: 2px black solid;
+    width: 16%;
+    text-align: center; }
+  .main__logoLista2 {
+    border: 2px black solid;
+    width: 16%;
+    text-align: center; }
+  .main__logoLista3 {
+    border: 2px black solid;
+    width: 14%;
+    text-align: center; }
+  .main__logoEnmascarar {
+    border: 2px black solid;
+    width: 25%;
+    text-align: center; }
+  .main__logo2 {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around; }
+  .main__logoTable {
+    border-collapse: collapse;
+    width: 40%;
+    border: 2px solid black; }
+  .main__logoPanel {
+    border: 2px solid black;
+    width: 25%;
+    text-align: center; }
+  .main__logoPlay {
+    border: 2px solid black;
+    width: 25%;
+    text-align: center; }
+  .main__contenedorBtn {
+    text-align: right;
+    padding-right: 4rem; }
+  .main__div--padding {
+    padding: 1rem; }
+  .main__div--border {
+    border: 2px solid black; }
+  .main__div--width20 {
+    width: 20rem; }
+  .main__div--width40 {
+    width: 40rem; }
+  .main__div--inline {
+    display: inline-block; }
+
 .footer {
   grid-area: "footer";
   display: inline-flex;
@@ -56,3 +158,64 @@ body {
     color: black;
     font-size: 1.5rem;
     margin: 1rem; }
+
+.btn__principal {
+  display: block;
+  border: 1px solid black;
+  margin: 2rem auto;
+  width: 10rem;
+  height: 3rem;
+  font-family: Georgia;
+  font-weight: 600; }
+
+.btn__play {
+  display: block;
+  border: 1px solid black;
+  margin: 2rem auto;
+  width: 10rem;
+  height: 3rem;
+  font-family: Georgia;
+  font-weight: 600; }
+
+.btn__lista1 {
+  width: 25%; }
+
+.btn__lista1:hover {
+  background-color: #d1d0cd; }
+
+.btn__lista2 {
+  width: 45%; }
+
+.btn__lista2:hover {
+  background-color: #d1d0cd; }
+
+.btn__lista3 {
+  width: 55%; }
+
+.btn__lista3:hover {
+  background-color: #d1d0cd; }
+
+.btn__correcto {
+  width: 2rem;
+  height: 2rem;
+  background-color: green; }
+
+.btn__incorrecto {
+  width: 2rem;
+  height: 2rem;
+  background-color: red; }
+
+form {
+  line-height: 2rem; }
+
+.table--width30 {
+  width: 30%; }
+
+.table--inline {
+  display: inline-table; }
+
+.btn--inline {
+  display: inline; }
+
+.p--inline {
+  display: inline-block; }

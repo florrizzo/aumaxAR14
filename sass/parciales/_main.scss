@@ -1,0 +1,156 @@
+.main{
+    grid-area: "main";
+    margin-top: 2rem;
+
+    &__title{
+        text-align: center;
+        margin: 1em auto;
+        font-family: Georgia;
+        font-size: 3em;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2em;
+    }
+
+    &__text{
+        width: 40%;
+        display: flex;
+        align-items : center;
+        justify-content : center;
+        text-align: center;
+        animation: myAnim 4s ease 0s 1 normal forwards;
+    }
+
+    &__textCalibracion{
+        width: 80%;
+        text-align: center;
+        margin: 2rem auto;
+    }
+    
+    &__table{
+        border-collapse: collapse;
+        width: 90%;
+        margin: 2rem auto;
+    }
+    
+    &__th{
+        border: 1px solid black;
+        margin: 0 0;
+    }
+    
+    &__td{
+        border: 1px solid black;
+        margin: 0 0;
+        height: 2rem;
+    }
+    
+    &__audiometriaPanelControl{
+        display: flex;
+        margin: 2rem;    
+    }
+    
+    &__audPanel{
+        border: 2px solid black;
+        /* width: 45%; */
+        text-align: center;
+    }
+    
+    &__audSenal{
+        border-bottom: 1px solid black;
+        display: flex;
+        height: 50%;
+        align-items: center;
+    }
+    
+    &__audPlay{
+        border: 2px solid black;
+    }
+    
+    &__audEnmascarar{
+        border: 2px solid black;
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    &__logo1{
+        display: flex;
+        margin: 2rem;
+        justify-content: space-around;
+    }
+    
+    &__logoLista1{
+        border: 2px black solid;
+        width: 16%;
+        text-align: center;
+    }
+    
+    &__logoLista2{
+        border: 2px black solid;
+        width: 16%;
+        text-align: center;
+    }
+    
+    &__logoLista3{
+        border: 2px black solid;
+        width: 14%;
+        text-align: center;
+    }
+    
+    &__logoEnmascarar{
+        border: 2px black solid;
+        width: 25%;
+        text-align: center;
+    }
+    
+    &__logo2{
+        display: flex;
+        margin: 2rem;
+        justify-content: space-around;
+    }
+    
+    &__logoTable{
+        border-collapse: collapse;
+        width: 40%;
+        border: 2px solid black;
+    }
+    
+    &__logoPanel{
+        border: 2px solid black;
+        width: 25%;
+        text-align: center;
+    }
+    
+    &__logoPlay{
+        border: 2px solid black;
+        width: 25%;
+        text-align: center;
+    }
+
+    &__contenedorBtn{
+        text-align: right;
+        padding-right: 4rem;
+    }
+    
+    &__div--padding{
+        padding: 1rem;
+    }
+    
+    &__div--border{
+        border: 2px solid black;
+    }
+    
+    &__div--width20{
+        width: 20rem;
+    }
+    
+    &__div--width40{
+        width: 40rem;
+    }
+    
+    &__div--inline{
+        display: inline-block;
+    }
+}

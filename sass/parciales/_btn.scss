@@ -1,0 +1,57 @@
+.btn{
+    &__principal{
+        display: block;
+        border: 1px solid black;
+        margin: 2rem auto;
+        width: 10rem;
+        height: 3rem;
+        font-family: Georgia;
+        font-weight: 600;
+    }
+    
+    &__play{
+        display: block;
+        border: 1px solid black;
+        margin: 2rem auto;
+        width: 10rem;
+        height: 3rem;
+        font-family: Georgia;
+        font-weight: 600;
+    }
+    
+    &__lista1{
+        width:25%;
+    }
+    
+    &__lista1:hover{
+        background-color: #d1d0cd;
+    }
+    
+    &__lista2{
+        width: 45%;
+    }
+    
+    &__lista2:hover{
+        background-color: #d1d0cd;
+    }
+    
+    &__lista3{
+        width: 55%;
+    }
+    
+    &__lista3:hover{
+        background-color: #d1d0cd;
+    }
+
+    &__correcto{
+        width: 2rem;
+        height: 2rem;
+        background-color: green;
+    }
+    
+    &__incorrecto{
+        width: 2rem;
+        height: 2rem;
+        background-color: red;
+    }
+}
