@@ -53,15 +53,12 @@ body {
     justify-content: space-evenly;
     margin-bottom: 2em; }
   .main__text {
-    width: 40%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    animation: myAnim 4s ease 0s 1 normal forwards; }
-  .main__textCalibracion {
-    width: 80%;
-    text-align: center;
+    animation: myAnim 4s ease 0s 1 normal forwards;
     margin: 2rem auto; }
   .main__table {
     border-collapse: collapse;
@@ -206,7 +203,8 @@ body {
   background-color: red; }
 
 form {
-  line-height: 2rem; }
+  line-height: 2rem;
+  text-align: center; }
 
 .table--width30 {
   width: 30%; }
