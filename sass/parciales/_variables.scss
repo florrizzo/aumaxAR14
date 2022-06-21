@@ -1,2 +1,17 @@
-$grisClarito: #e3e2de;
-$grisOscuro: #777;
+@mixin superCentro{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+};
+
+$listas:(
+    lista1: 25%,
+    lista2: 45%,
+    lista3: 55%,
+);
+
+$colores:(
+    grisClarito: #e3e2de,
+    grisOscuro: #777,
+    grisHover: #d1d0cd,
+);

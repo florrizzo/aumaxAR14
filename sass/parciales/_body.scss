@@ -1,7 +1,7 @@
 @import "./variables";
 
 body{
-    background-color: $grisClarito;
+    background-color: map-get($colores, grisClarito);
     font-size: 18px;
     font-family: 'Yusei Magic', sans-serif;
     display: grid;

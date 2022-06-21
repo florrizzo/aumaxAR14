@@ -2,6 +2,10 @@
     grid-area: "main";
     margin-top: 2rem;
 
+    @include laptop {
+        margin-top: 0;
+    }
+
     &__title{
         text-align: center;
         margin: 1em auto;
@@ -9,20 +13,14 @@
         font-size: 3em;
     }
 
-    &__content{
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 2em;
-    }
-
     &__text{
         width: 80%;
         display: flex;
-        align-items : center;
-        justify-content : center;
-        text-align: center;
-        animation: myAnim 4s ease 0s 1 normal forwards;
+        @include superCentro;
         margin: 2rem auto;
+        @include laptop{
+            width: 100%;
+        }
     }
     
     &__table{
@@ -51,6 +49,10 @@
         border: 2px solid black;
         /* width: 45%; */
         text-align: center;
+        @include tablet{
+            width: 100%;
+            
+        }
     }
     
     &__audSenal{
@@ -58,6 +60,13 @@
         display: flex;
         height: 50%;
         align-items: center;
+        @include movil {
+            height: 60%;
+        }
+    }
+
+    &__audOido{
+        width: 50%;
     }
     
     &__audPlay{
@@ -74,54 +83,84 @@
         display: flex;
         margin: 2rem;
         justify-content: space-around;
+        @include laptop {
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center;   
+        }
     }
     
     &__logoLista1{
         border: 2px black solid;
         width: 16%;
         text-align: center;
+        @include laptop {
+            width: 90%;
+        }
     }
     
     &__logoLista2{
         border: 2px black solid;
         width: 16%;
         text-align: center;
+        @include laptop {
+            width: 90%;
+        }
     }
     
     &__logoLista3{
         border: 2px black solid;
         width: 14%;
         text-align: center;
+        @include laptop {
+            width: 90%;
+        }
     }
     
     &__logoEnmascarar{
         border: 2px black solid;
         width: 25%;
         text-align: center;
+        @include laptop {
+            width: 90%;
+        }
     }
     
     &__logo2{
         display: flex;
         margin: 2rem;
         justify-content: space-around;
+        @include laptop {
+            flex-direction: column;
+            align-items: center;   
+        }
     }
     
     &__logoTable{
         border-collapse: collapse;
         width: 40%;
         border: 2px solid black;
+        @include laptop {
+            width: 90%;
+        }
     }
     
     &__logoPanel{
         border: 2px solid black;
         width: 25%;
         text-align: center;
+        @include laptop {
+            width: 90%;
+        }
     }
     
     &__logoPlay{
         border: 2px solid black;
         width: 25%;
         text-align: center;
+        @include laptop {
+            width: 90%;
+        }
     }
 
     &__contenedorBtn{

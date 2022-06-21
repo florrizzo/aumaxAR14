@@ -20,9 +20,19 @@ body {
     align-items: center;
     justify-content: center;
     height: 10em; }
+  @media screen and (max-width: 992px) {
+    .header__link {
+      width: 216px;
+      height: 175px;
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
   .header__logo {
     display: inline;
     width: 30%; }
+    @media screen and (max-width: 992px) {
+      .header__logo {
+        width: 90%; } }
   .header__anchor {
     color: #777;
     font-family: Georgia;
@@ -37,29 +47,34 @@ body {
     height: 5em;
     background-color: #e3e2de;
     border: 2px solid black; }
+    @media screen and (max-width: 992px) {
+      .header__button {
+        width: 70%;
+        height: 2em; } }
   .header__button:hover {
     background-color: #d1d0cd; }
 
 .main {
   grid-area: "main";
   margin-top: 2rem; }
+  @media screen and (max-width: 992px) {
+    .main {
+      margin-top: 0; } }
   .main__title {
     text-align: center;
     margin: 1em auto;
     font-family: Georgia;
     font-size: 3em; }
-  .main__content {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 2em; }
   .main__text {
     width: 80%;
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
-    animation: myAnim 4s ease 0s 1 normal forwards;
+    align-items: center;
     margin: 2rem auto; }
+    @media screen and (max-width: 992px) {
+      .main__text {
+        width: 100%; } }
   .main__table {
     border-collapse: collapse;
     width: 90%;
@@ -78,11 +93,19 @@ body {
     border: 2px solid black;
     /* width: 45%; */
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .main__audPanel {
+        width: 100%; } }
   .main__audSenal {
     border-bottom: 1px solid black;
     display: flex;
     height: 50%;
     align-items: center; }
+    @media screen and (max-width: 576px) {
+      .main__audSenal {
+        height: 60%; } }
+  .main__audOido {
+    width: 50%; }
   .main__audPlay {
     border: 2px solid black; }
   .main__audEnmascarar {
@@ -93,38 +116,68 @@ body {
     display: flex;
     margin: 2rem;
     justify-content: space-around; }
+    @media screen and (max-width: 992px) {
+      .main__logo1 {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: center; } }
   .main__logoLista1 {
     border: 2px black solid;
     width: 16%;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .main__logoLista1 {
+        width: 90%; } }
   .main__logoLista2 {
     border: 2px black solid;
     width: 16%;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .main__logoLista2 {
+        width: 90%; } }
   .main__logoLista3 {
     border: 2px black solid;
     width: 14%;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .main__logoLista3 {
+        width: 90%; } }
   .main__logoEnmascarar {
     border: 2px black solid;
     width: 25%;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .main__logoEnmascarar {
+        width: 90%; } }
   .main__logo2 {
     display: flex;
     margin: 2rem;
     justify-content: space-around; }
+    @media screen and (max-width: 992px) {
+      .main__logo2 {
+        flex-direction: column;
+        align-items: center; } }
   .main__logoTable {
     border-collapse: collapse;
     width: 40%;
     border: 2px solid black; }
+    @media screen and (max-width: 992px) {
+      .main__logoTable {
+        width: 90%; } }
   .main__logoPanel {
     border: 2px solid black;
     width: 25%;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .main__logoPanel {
+        width: 90%; } }
   .main__logoPlay {
     border: 2px solid black;
     width: 25%;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .main__logoPlay {
+        width: 90%; } }
   .main__contenedorBtn {
     text-align: right;
     padding-right: 4rem; }
@@ -156,7 +209,7 @@ body {
     font-size: 1.5rem;
     margin: 1rem; }
 
-.btn__principal {
+.btn__principal, .btn__play {
   display: block;
   border: 1px solid black;
   margin: 2rem auto;
@@ -166,28 +219,22 @@ body {
   font-weight: 600; }
 
 .btn__play {
-  display: block;
-  border: 1px solid black;
-  margin: 2rem auto;
-  width: 10rem;
-  height: 3rem;
-  font-family: Georgia;
-  font-weight: 600; }
+  background-color: #d1d0cd; }
 
 .btn__lista1 {
   width: 25%; }
 
-.btn__lista1:hover {
-  background-color: #d1d0cd; }
-
 .btn__lista2 {
   width: 45%; }
 
-.btn__lista2:hover {
-  background-color: #d1d0cd; }
-
 .btn__lista3 {
   width: 55%; }
+
+.btn__lista1:hover {
+  background-color: #d1d0cd; }
+
+.btn__lista2:hover {
+  background-color: #d1d0cd; }
 
 .btn__lista3:hover {
   background-color: #d1d0cd; }

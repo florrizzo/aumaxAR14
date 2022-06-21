@@ -1,3 +1,5 @@
+@import "./variables";
+
 .btn{
     &__principal{
         display: block;
@@ -10,37 +12,38 @@
     }
     
     &__play{
-        display: block;
-        border: 1px solid black;
-        margin: 2rem auto;
-        width: 10rem;
-        height: 3rem;
-        font-family: Georgia;
-        font-weight: 600;
+        @extend .btn__principal;
+        background-color: map-get($colores, grisHover);
     }
     
-    &__lista1{
-        width:25%;
+
+    @each $lista, $width in $listas {
+        &__#{$lista}{
+            width: $width;
+        }       
     }
+    // &__lista1{
+    //     width:25%;
+    // }
     
     &__lista1:hover{
-        background-color: #d1d0cd;
+        background-color: map-get($colores, grisHover);
     }
     
-    &__lista2{
-        width: 45%;
-    }
+    // &__lista2{
+    //     width: 45%;
+    // }
     
     &__lista2:hover{
-        background-color: #d1d0cd;
+        background-color: map-get($colores, grisHover);
     }
     
-    &__lista3{
-        width: 55%;
-    }
+    // &__lista3{
+    //     width: 55%;
+    // }
     
     &__lista3:hover{
-        background-color: #d1d0cd;
+        background-color: map-get($colores, grisHover);
     }
 
     &__correcto{

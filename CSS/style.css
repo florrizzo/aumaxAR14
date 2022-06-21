@@ -336,42 +336,32 @@ body{
 
 @media screen and (max-width: 768px) {
 
-    .header__link{
+    /* .header__link{
         width: 216px;
         height: 175px;
         display: flex;
         align-items: center;
         justify-content: center;
 
-    }
+    } */
 
-    .header__logo{
+    /* .header__logo{
         width: 90%;
-    }
+    } */
 
-    .header__button{
+    /* .header__button{
         width: 70%;
         height: 2em;
-    }
-
-    .main__content{
-        flex-direction: column;
-    }
-
-    .main__video{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    
-    .main__text{
+    } */
+   
+    /* .main__text{
         width: 100%;
         align-items : center;
         justify-content : center;
         text-align: center;
-    }
+    } */
 
-    .main__audiometriaPanelControl{
+    /* .main__audiometriaPanelControl{
         flex-direction: column;
         align-items: center;   
     }
@@ -386,14 +376,14 @@ body{
     
     .main__audEnmascarar{
         width: 90%;
-    }
+    } */
 
-    .main__logo1{
+    /* .main__logo1{
         flex-direction: column;
         align-items: center;   
-    }
+    } */
     
-    .main__logoLista1{
+    /* .main__logoLista1{
         width: 90%;
     }
         
@@ -424,54 +414,44 @@ body{
 
     .main__logoTable{
         width: 90%;
-    }
+    } */
 }
 
 
 @media screen and (max-width: 992px) {
 
     
-    .header__link{
+    /* .header__link{
         width: 216px;
         height: 175px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
-    .header__logo{
+    /* .header__logo{
         width: 90%;
-    }
+    } */
 
-    .header__button{
+    /* .header__button{
         width: 70%;
         height: 2em;
-    }
-
-    .main__content{
-        flex-direction: column;
-    }
-
-    .main__video{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
+    } */
     
-    .main__text{
+    /* .main__text{
         width: 100%;
         align-items : center;
         justify-content : center;
         text-align: center;
-    }
+    } */
 
-    .main__logo1{
+    /* .main__logo1{
         margin-top: 0;
-    }
+    } */
 
-    main{
+    /* main{
         margin-top: 0;
-    }
+    } */
 
     form{
         display: flex;

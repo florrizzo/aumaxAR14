@@ -1,24 +1,38 @@
 @import "./variables";
+@import "./responsive";
 
 .header{
 
     grid-area: "header";
     
     &__nav{
-        background-color: #777;
+        background-color: map-get($colores, grisOscuro);
         display: flex;
         align-items : center;
         justify-content : center;
         height: 10em;
     }
+
+    @include laptop{
+        &__link{
+            width: 216px;
+            height: 175px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
     
     &__logo{
         display: inline;
         width: 30%;
+        @include laptop{
+            width: 90%;
+        }
     }
     
     &__anchor{
-        color: #777;
+        color: map-get($colores, grisOscuro);
         font-family: Georgia;
         text-decoration: none;
     }
@@ -35,11 +49,15 @@
     &__button{
         width: 20%;
         height: 5em;
-        background-color: $grisClarito;
-        border: 2px solid black
+        background-color: map-get($colores, grisClarito);
+        border: 2px solid black;
+        @include laptop{
+            width: 70%;
+            height: 2em;
+        }
     }
     
     &__button:hover{
-        background-color: #d1d0cd;
+        background-color: map-get($colores, grisHover);
     }
 }
