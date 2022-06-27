@@ -1,6 +1,9 @@
+@import "./responsive";
+
 .main{
     grid-area: "main";
     margin-top: 2rem;
+    @include superCentro;
 
     @include laptop {
         margin-top: 0;
@@ -28,6 +31,25 @@
         width: 90%;
         margin: 2rem auto;
     }
+
+    &__tableDesktop{
+        @extend .main__table;
+        @include movil{
+            display: none;
+        }
+
+    }
+
+    &__tableMobile{
+        @extend .main__table;
+        display: none;
+        @include superCentro;
+        margin: 1rem auto;        
+        @include movil{
+                display: block;
+        }
+    }
+
     
     &__th{
         border: 1px solid black;

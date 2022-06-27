@@ -56,7 +56,10 @@ body {
 
 .main {
   grid-area: "main";
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
   @media screen and (max-width: 992px) {
     .main {
       margin-top: 0; } }
@@ -75,10 +78,22 @@ body {
     @media screen and (max-width: 992px) {
       .main__text {
         width: 100%; } }
-  .main__table {
+  .main__table, .main__tableDesktop, .main__tableMobile {
     border-collapse: collapse;
     width: 90%;
     margin: 2rem auto; }
+  @media screen and (max-width: 576px) {
+    .main__tableDesktop {
+      display: none; } }
+  .main__tableMobile {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 1rem auto; }
+    @media screen and (max-width: 576px) {
+      .main__tableMobile {
+        display: block; } }
   .main__th {
     border: 1px solid black;
     margin: 0 0; }

@@ -22,25 +22,14 @@
             width: $width;
         }       
     }
-    // &__lista1{
-    //     width:25%;
-    // }
     
     &__lista1:hover{
         background-color: map-get($colores, grisHover);
     }
     
-    // &__lista2{
-    //     width: 45%;
-    // }
-    
     &__lista2:hover{
         background-color: map-get($colores, grisHover);
     }
-    
-    // &__lista3{
-    //     width: 55%;
-    // }
     
     &__lista3:hover{
         background-color: map-get($colores, grisHover);
