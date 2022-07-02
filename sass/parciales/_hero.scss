@@ -1,0 +1,16 @@
+.hero{
+    display: flex;
+    background-image: url("../Assets/background_one.png");
+    margin-top: 0;
+    height: 25em;
+    background-size: cover;
+    box-sizing: border-box;
+    grid-area: hero;
+    justify-content: end;
+    
+    &__contenido{
+        width: 30%;
+        text-align: center;
+        margin: 6em;
+    }
+}

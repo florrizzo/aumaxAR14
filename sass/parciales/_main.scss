@@ -16,6 +16,38 @@
         font-size: 3em;
     }
 
+    &__anmat{
+        @include superCentro;
+        margin: 3em auto;
+    }
+
+    &__logoAnmat{
+        width: 20%;
+    }
+
+    &__cards{
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__card{
+        background: rgb(232, 225, 231);
+        box-shadow: 0 0 16px rgba(32, 4, 69, 0.5);
+        width:30%;
+        margin: 1.66%;
+        margin-top: 10rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        text-align: center;
+    }
+
+    &__imageCard{
+        width: 18%;
+        object-fit: contain;
+        border-radius: 1rem;
+    }
+
     &__text{
         width: 80%;
         display: flex;
