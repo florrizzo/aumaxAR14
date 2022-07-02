@@ -1,12 +1,19 @@
 @import "./variables";
+@import "./responsive";
 
 body{
     background-color: map-get($colores, grisClarito);
     font-size: 18px;
     font-family: 'Yusei Magic', sans-serif;
+}
+
+.index{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10rem 30rem 80rem 10rem;
+    @include tablet{
+        grid-template-rows: 10rem 30rem 120rem 10rem;
+    }
     grid-template-areas:
     "header"
     "hero"

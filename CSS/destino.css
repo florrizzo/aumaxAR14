@@ -6,11 +6,16 @@
 body {
   background-color: #e3e2de;
   font-size: 18px;
-  font-family: 'Yusei Magic', sans-serif;
+  font-family: 'Yusei Magic', sans-serif; }
+
+.index {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 10rem 30rem 80rem 10rem;
   grid-template-areas: "header" "hero" "main" "footer"; }
+  @media screen and (max-width: 768px) {
+    .index {
+      grid-template-rows: 10rem 30rem 120rem 10rem; } }
 
 .header {
   grid-area: "header"; }
@@ -54,7 +59,7 @@ body {
   .header__button:hover {
     background-color: #d1d0cd; }
 
-.hero {
+.hero__index {
   display: flex;
   background-image: url("../Assets/background_one.png");
   margin-top: 0;
@@ -63,10 +68,31 @@ body {
   box-sizing: border-box;
   grid-area: hero;
   justify-content: end; }
-  .hero__contenido {
-    width: 30%;
-    text-align: center;
-    margin: 6em; }
+
+.hero__estudios {
+  display: flex;
+  background-image: url("../Assets/background_two.jpg");
+  margin-top: 0;
+  height: 25em;
+  background-size: cover;
+  box-sizing: border-box;
+  grid-area: hero;
+  justify-content: end; }
+
+.hero__contenido {
+  width: 30%;
+  text-align: center;
+  margin: 6em; }
+  @media screen and (max-width: 768px) {
+    .hero__contenido {
+      width: 70%; } }
+
+.hero__title {
+  text-align: center;
+  margin: 2em auto;
+  font-family: Georgia;
+  font-size: 8rem;
+  color: #e3e2de; }
 
 .main {
   grid-area: "main";
@@ -93,6 +119,9 @@ body {
     margin: 1rem auto;
     display: flex;
     justify-content: space-evenly; }
+    @media screen and (max-width: 768px) {
+      .main__cards {
+        flex-direction: column; } }
   .main__card {
     background: #e8e1e7;
     box-shadow: 0 0 16px rgba(32, 4, 69, 0.5);
@@ -102,6 +131,10 @@ body {
     padding: 1rem;
     border-radius: 2rem;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .main__card {
+        width: 80%;
+        margin: 2rem auto; } }
   .main__imageCard {
     width: 18%;
     object-fit: contain;
@@ -125,13 +158,14 @@ body {
       display: none; } }
   .main__tableMobile {
     display: none;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     margin: 1rem auto; }
     @media screen and (max-width: 576px) {
       .main__tableMobile {
-        display: block; } }
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-left: 8rem; } }
   .main__th {
     border: 1px solid black;
     margin: 0 0; }
@@ -251,7 +285,8 @@ body {
   background-color: #777;
   padding: 1em;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
   .footer__p {
     display: inline-flex; }
   .footer__list {

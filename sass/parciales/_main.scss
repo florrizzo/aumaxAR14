@@ -29,6 +29,10 @@
         margin: 1rem auto;
         display: flex;
         justify-content: space-evenly;
+
+        @include tablet{
+            flex-direction: column;
+        }
     }
 
     &__card{
@@ -40,6 +44,11 @@
         padding: 1rem;
         border-radius: 2rem;
         text-align: center;
+
+        @include tablet{
+            width: 80%;
+            margin: 2rem auto;
+        }
     }
 
     &__imageCard{
@@ -75,10 +84,12 @@
     &__tableMobile{
         @extend .main__table;
         display: none;
-        @include superCentro;
         margin: 1rem auto;        
         @include movil{
                 display: block;
+                @include superCentro;
+                margin-left: 8rem;
+
         }
     }
 

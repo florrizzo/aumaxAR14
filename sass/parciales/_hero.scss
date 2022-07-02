@@ -1,16 +1,40 @@
 .hero{
-    display: flex;
-    background-image: url("../Assets/background_one.png");
-    margin-top: 0;
-    height: 25em;
-    background-size: cover;
-    box-sizing: border-box;
-    grid-area: hero;
-    justify-content: end;
-    
+    &__index{
+        display: flex;
+        background-image: url("../Assets/background_one.png");
+        margin-top: 0;
+        height: 25em;
+        background-size: cover;
+        box-sizing: border-box;
+        grid-area: hero;
+        justify-content: end;
+    }
+
+    &__estudios{
+        display: flex;
+        background-image: url("../Assets/background_two.jpg");
+        margin-top: 0;
+        height: 25em;
+        background-size: cover;
+        box-sizing: border-box;
+        grid-area: hero;
+        justify-content: end;
+    }
+        
     &__contenido{
         width: 30%;
         text-align: center;
         margin: 6em;
+        @include tablet{
+            width: 70%;
+        }
+    }
+
+    &__title{
+        text-align: center;
+        margin: 2em auto;
+        font-family: Georgia;
+        font-size: 8rem;
+        color: map-get($colores, grisClarito);
     }
 }
