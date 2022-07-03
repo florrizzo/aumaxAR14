@@ -89,7 +89,7 @@ body {
 
 .hero__title {
   text-align: center;
-  margin: 2em auto;
+  margin: 1.5em auto;
   font-family: Georgia;
   font-size: 8rem;
   color: #e3e2de; }
@@ -173,6 +173,11 @@ body {
     border: 1px solid black;
     margin: 0 0;
     height: 2rem; }
+  .main__explicacion {
+    margin-top: 2rem;
+    background-color: whitesmoke; }
+  .main__audiometriaImagen {
+    width: 40%; }
   .main__audiometriaPanelControl {
     display: flex;
     margin: 2rem; }

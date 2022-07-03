@@ -37,26 +37,35 @@
     </header> 
     <main class="container">
         <p class="main__text">Para cualquier consulta de como funciona el audiómetro Audmax AR14 dejanos tu mensaje, y te contestamos lo antes posible.</p>
-        <form method="GET">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+        <fieldset class="container mt-3 p-4">
+            <div class="containers">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="input" class="form-control" id="nombre" name="nombre" placeholder="Hermione">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="input" class="form-control" id="apellido" name="apellido" placeholder="Granger">
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="hermione.granger@gmail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="comentario" class="form-label">Escribe tu consulta</label>
+                    <textarea class="form-control" id="comentario" name="comentario" rows="4"></textarea>
+                </div>
+                <div>
+                    <input type="submit" class="btn__principal">
+                </div> 
             </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="comentario">Dejanos tu comentario:</p>
-                <textarea name="comentario" id="comentario" cols="40" rows="10"></textarea>
-            </div>
-            <div>
-                <button class="btn__principal">Borrar</button>
-            </div>
-            <div>
-                <input type="submit" class="btn__principal">
-            </div>        
-        </form>
+        </fieldset>
     </main>
     <footer class="footer">
         <div>

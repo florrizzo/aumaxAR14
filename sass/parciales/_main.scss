@@ -104,6 +104,15 @@
         margin: 0 0;
         height: 2rem;
     }
+
+    &__explicacion{
+        margin-top: 2rem;
+        background-color: whitesmoke;
+    }
+
+    &__audiometriaImagen{
+        width: 40%;
+    }
     
     &__audiometriaPanelControl{
         display: flex;
