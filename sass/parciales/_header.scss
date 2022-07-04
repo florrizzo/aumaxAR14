@@ -25,9 +25,9 @@
     
     &__logo{
         display: inline;
-        width: 30%;
+        width: 25%;
         @include laptop{
-            width: 90%;
+            width: 80%;
         }
     }
     
