@@ -1,5 +1,10 @@
 @import "./responsive";
 
+.test{
+    width: 400px;
+    height: 300px;
+}
+
 .main{
     grid-area: "main";
     margin-top: 2rem;
@@ -111,7 +116,7 @@
     }
 
     &__audiometriaImagen{
-        width: 40%;
+        width: 35%;
     }
     
     &__audiometriaPanelControl{

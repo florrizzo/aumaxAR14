@@ -94,6 +94,10 @@ body {
   font-size: 8rem;
   color: #e3e2de; }
 
+.test {
+  width: 400px;
+  height: 300px; }
+
 .main {
   grid-area: "main";
   margin-top: 2rem;
@@ -177,7 +181,7 @@ body {
     margin: 3rem auto;
     background-color: whitesmoke; }
   .main__audiometriaImagen {
-    width: 40%; }
+    width: 35%; }
   .main__audiometriaPanelControl {
     display: flex;
     margin: 2rem; }
