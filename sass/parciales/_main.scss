@@ -1,10 +1,5 @@
 @import "./responsive";
 
-.test{
-    width: 400px;
-    height: 300px;
-}
-
 .main{
     grid-area: "main";
     margin-top: 2rem;
@@ -28,6 +23,11 @@
 
     &__logoAnmat{
         width: 20%;
+    }
+
+    &__carousel{
+        width: 400px;
+        height: 300px;
     }
 
     &__cards{
@@ -117,6 +117,10 @@
 
     &__audiometriaImagen{
         width: 35%;
+        @include tablet{
+            width: 60%;
+            margin-left: 15%;
+        }
     }
     
     &__audiometriaPanelControl{

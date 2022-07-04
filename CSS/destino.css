@@ -94,10 +94,6 @@ body {
   font-size: 8rem;
   color: #e3e2de; }
 
-.test {
-  width: 400px;
-  height: 300px; }
-
 .main {
   grid-area: "main";
   margin-top: 2rem;
@@ -119,6 +115,9 @@ body {
     margin: 3em auto; }
   .main__logoAnmat {
     width: 20%; }
+  .main__carousel {
+    width: 400px;
+    height: 300px; }
   .main__cards {
     margin: 1rem auto;
     display: flex;
@@ -182,6 +181,10 @@ body {
     background-color: whitesmoke; }
   .main__audiometriaImagen {
     width: 35%; }
+    @media screen and (max-width: 768px) {
+      .main__audiometriaImagen {
+        width: 60%;
+        margin-left: 15%; } }
   .main__audiometriaPanelControl {
     display: flex;
     margin: 2rem; }
